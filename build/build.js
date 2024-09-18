@@ -6,7 +6,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   props: {
     src: { default: "" },
     alt: { default: "" },
-    text: { default: "" }
+    text: { default: "" },
+    class: { default: "" }
   },
   setup(__props) {
     const props = __props;

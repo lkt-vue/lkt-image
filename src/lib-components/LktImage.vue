@@ -7,10 +7,12 @@ const props = withDefaults(defineProps<{
     src?: string,
     alt?: string,
     text?: string,
+    class?: string,
 }>(), {
     src: '',
     alt: '',
     text: '',
+    class: '',
 });
 
 const computedClassName = computed(() => {
