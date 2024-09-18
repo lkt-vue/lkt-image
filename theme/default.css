@@ -1,0 +1,24 @@
+:root {
+    --lkt-image-gap: 15px;
+    --lkt-image-font-size: 14px;
+    --lkt-image-font-weight: 14px;
+    --lkt-image-text-align: center;
+    --lkt-image-padding: 15px;
+    --lkt-image-min-width: initial;
+    --lkt-image-max-width: initial;
+    --lkt-image-width: initial;
+    --lkt-image-min-height: initial;
+    --lkt-image-max-height: initial;
+    --lkt-image-height: initial;
+    --lkt-image-bg: #ffffff;
+    --lkt-image-bg-hover: #ffffff;
+    --lkt-image-color: #444444;
+    --lkt-image-color-hover: #444444;
+    --lkt-image-border-radius: 1px;
+    --lkt-image-border-width: 1px;
+    --lkt-image-border-style: solid;
+    --lkt-image-border-color: #ffffff;
+    --lkt-image-border-color-hover: #ffffff;
+    --lkt-image-transition: all linear 300ms;
+    --lkt-image-margin: 0;
+}

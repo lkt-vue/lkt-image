@@ -1,0 +1,29 @@
+.lkt-image {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--lkt-image-gap);
+    padding: var(--lkt-image-padding);
+    min-width: var(--lkt-image-min-width);
+    max-width: var(--lkt-image-max-width);
+    width: var(--lkt-image-width);
+    min-height: var(--lkt-image-min-height);
+    max-height: var(--lkt-image-max-height);
+    height: var(--lkt-image-height);
+    background: var(--lkt-image-bg);
+    border-radius: var(--lkt-image-border-radius);
+    border-width: var(--lkt-image-border-width);
+    border-style: var(--lkt-image-border-style);
+    border-color: var(--lkt-image-border-color);
+    font-size: var(--lkt-image-font-size);
+    font-weight: var(--lkt-image-font-weight);
+    color: var(--lkt-image-color);
+    text-align: var(--lkt-image-text-align);
+    transition: var(--lkt-image-transition);
+    margin: var(--lkt-image-margin);
+}
+
+.lkt-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
