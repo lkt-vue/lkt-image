@@ -21,4 +21,8 @@
     --lkt-image-border-color-hover: #ffffff;
     --lkt-image-transition: all linear 300ms;
     --lkt-image-margin: 0;
+    --lkt-image-overflow: hidden;
+    --lkt-image-align-items: center;
+    --lkt-image-justify-content: center;
+    --lkt-image-flex-direction: column;
 }

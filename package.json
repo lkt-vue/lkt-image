@@ -1,6 +1,6 @@
 {
   "name": "lkt-image",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "type": "module",
   "module": "./dist/build.js",
@@ -10,7 +10,8 @@
     },
     "./styles": "./dist/style.css",
     "./theme": "./theme/default.css",
-    "./theme/default": "./theme/default.css"
+    "./theme/default": "./theme/default.css",
+    "./theme/lkt-alt-1": "./theme/lkt-alt-1.css"
   },
   "types": "./dist/index.d.ts",
   "files": [

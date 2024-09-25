@@ -1,7 +1,8 @@
 .lkt-image {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: var(--lkt-image-flex-direction);
+    align-items: var(--lkt-image-align-items);
+    justify-content: var(--lkt-image-justify-content);
     gap: var(--lkt-image-gap);
     padding: var(--lkt-image-padding);
     min-width: var(--lkt-image-min-width);
@@ -21,6 +22,7 @@
     text-align: var(--lkt-image-text-align);
     transition: var(--lkt-image-transition);
     margin: var(--lkt-image-margin);
+    overflow: var(--lkt-image-overflow);
 }
 
 .lkt-image img {
