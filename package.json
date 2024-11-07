@@ -1,6 +1,6 @@
 {
   "name": "lkt-image",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "type": "module",
   "module": "./dist/build.js",
@@ -13,7 +13,7 @@
     "./theme/default": "./theme/default.css",
     "./theme/lkt-alt-1": "./theme/lkt-alt-1.css"
   },
-  "types": "./dist/index.d.ts",
+  "types": "./dist/build.d.ts",
   "files": [
     "dist/*",
     "src/**/*.vue",

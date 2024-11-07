@@ -1,5 +1,5 @@
 import { defineComponent, computed, openBlock, createElementBlock, normalizeClass, createElementVNode, normalizeStyle, createCommentVNode } from "vue";
-const _hoisted_1 = ["src"];
+const _hoisted_1 = ["src", "alt"];
 const _hoisted_2 = ["innerHTML"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "LktImage",
@@ -21,7 +21,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       }, [
         createElementVNode("img", {
           src: _ctx.src,
-          alt: "alt",
+          alt: _ctx.alt,
           style: normalizeStyle(_ctx.imageStyle)
         }, null, 12, _hoisted_1),
         _ctx.text ? (openBlock(), createElementBlock("figcaption", {
