@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import {computed} from "vue";
-import {LktObject} from "lkt-ts-interfaces";
+import {LktObject} from "lkt-vue-kernel";
 
 const props = withDefaults(defineProps<{
-    src?: string,
-    alt?: string,
-    text?: string,
-    class?: string,
-    imageStyle?: string|LktObject,
+    src?: string
+    alt?: string
+    text?: string
+    class?: string
+    imageStyle?: string|LktObject
 }>(), {
     src: '',
     alt: '',
