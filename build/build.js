@@ -1,15 +1,16 @@
-import { defineComponent, computed, createElementBlock, openBlock, normalizeClass, createElementVNode, createCommentVNode, normalizeStyle } from "vue";
+import { defineComponent, mergeDefaults, computed, createElementBlock, openBlock, normalizeClass, createElementVNode, createCommentVNode, normalizeStyle } from "vue";
+import { getDefaultValues, Image } from "lkt-vue-kernel";
 const _hoisted_1 = ["src", "alt"];
 const _hoisted_2 = ["innerHTML"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "LktImage",
-  props: {
-    src: { default: "" },
-    alt: { default: "" },
-    text: { default: "" },
-    class: { default: "" },
-    imageStyle: { default: "" }
-  },
+  props: /* @__PURE__ */ mergeDefaults({
+    src: {},
+    alt: {},
+    text: {},
+    class: {},
+    imageStyle: {}
+  }, getDefaultValues(Image)),
   setup(__props) {
     const props = __props;
     const computedClassName = computed(() => {

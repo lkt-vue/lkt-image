@@ -1,20 +1,8 @@
 <script setup lang="ts">
 import {computed} from "vue";
-import {LktObject} from "lkt-vue-kernel";
+import {getDefaultValues, Image, ImageConfig} from "lkt-vue-kernel";
 
-const props = withDefaults(defineProps<{
-    src?: string
-    alt?: string
-    text?: string
-    class?: string
-    imageStyle?: string|LktObject
-}>(), {
-    src: '',
-    alt: '',
-    text: '',
-    class: '',
-    imageStyle: ''
-});
+const props = withDefaults(defineProps<ImageConfig>(), getDefaultValues(Image));
 
 const computedClassName = computed(() => {
         return props.class;
@@ -28,6 +16,6 @@ const computedClassName = computed(() => {
         :class="computedClassName">
         <img :src="src" :alt="alt" :style="imageStyle"/>
 
-        <figcaption v-if="text" v-html="text"></figcaption>
+        <figcaption v-if="text" v-html="text"/>
     </figure>
 </template>

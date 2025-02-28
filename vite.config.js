@@ -34,6 +34,7 @@ export default {
                 'lkt-http',
                 'lkt-http-client',
                 'lkt-ts-interfaces',
+                'lkt-vue-kernel',
                 'lkt-i18n',
                 'lkt-session'
             ],
