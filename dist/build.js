@@ -1,7 +1,8 @@
-import { defineComponent, mergeDefaults, computed, createElementBlock, openBlock, normalizeClass, createElementVNode, createCommentVNode, normalizeStyle } from "vue";
+import { defineComponent, mergeDefaults, useSlots, computed, createElementBlock, openBlock, normalizeClass, createElementVNode, createCommentVNode, normalizeStyle, unref, renderSlot } from "vue";
 import { getDefaultValues, Image } from "lkt-vue-kernel";
 const _hoisted_1 = ["src", "alt"];
-const _hoisted_2 = ["innerHTML"];
+const _hoisted_2 = { key: 0 };
+const _hoisted_3 = ["innerHTML"];
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "LktImage",
   props: /* @__PURE__ */ mergeDefaults({
@@ -13,6 +14,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   }, getDefaultValues(Image)),
   setup(__props) {
     const props = __props;
+    const slots = useSlots();
     const computedClassName = computed(() => {
       return props.class;
     });
@@ -25,10 +27,12 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           alt: _ctx.alt,
           style: normalizeStyle(_ctx.imageStyle)
         }, null, 12, _hoisted_1),
-        _ctx.text ? (openBlock(), createElementBlock("figcaption", {
-          key: 0,
+        unref(slots).text ? (openBlock(), createElementBlock("figcaption", _hoisted_2, [
+          renderSlot(_ctx.$slots, "text")
+        ])) : _ctx.text ? (openBlock(), createElementBlock("figcaption", {
+          key: 1,
           innerHTML: _ctx.text
-        }, null, 8, _hoisted_2)) : createCommentVNode("", true)
+        }, null, 8, _hoisted_3)) : createCommentVNode("", true)
       ], 2);
     };
   }
