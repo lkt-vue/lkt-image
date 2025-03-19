@@ -22,5 +22,9 @@ const computedClassName = computed(() => {
             <slot name="text"/>
         </figcaption>
         <figcaption v-else-if="text" v-html="text"/>
+
+        <div class="lkt-overlay" v-if="slots.overlay">
+            <slot name="overlay"/>
+        </div>
     </figure>
 </template>

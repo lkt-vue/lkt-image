@@ -4,9 +4,11 @@ declare const slots: Readonly<{
 }>;
 declare const computedClassName: import("vue").ComputedRef<string>;
 declare const __VLS_ctx: InstanceType<__VLS_PickNotAny<typeof __VLS_self, new () => {}>>;
-declare var __VLS_1: {};
+declare var __VLS_1: {}, __VLS_3: {};
 type __VLS_Slots = __VLS_PrettifyGlobal<__VLS_OmitStringIndex<typeof __VLS_ctx.$slots> & {
     text?: (props: typeof __VLS_1) => any;
+} & {
+    overlay?: (props: typeof __VLS_3) => any;
 }>;
 declare const __VLS_self: import("vue").DefineComponent<ImageConfig, {
     slots: typeof slots;

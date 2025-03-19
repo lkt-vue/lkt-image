@@ -3,6 +3,10 @@ import { getDefaultValues, Image } from "lkt-vue-kernel";
 const _hoisted_1 = ["src", "alt"];
 const _hoisted_2 = { key: 0 };
 const _hoisted_3 = ["innerHTML"];
+const _hoisted_4 = {
+  key: 2,
+  class: "lkt-overlay"
+};
 const _sfc_main = /* @__PURE__ */ defineComponent({
   __name: "LktImage",
   props: /* @__PURE__ */ mergeDefaults({
@@ -32,7 +36,10 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ])) : _ctx.text ? (openBlock(), createElementBlock("figcaption", {
           key: 1,
           innerHTML: _ctx.text
-        }, null, 8, _hoisted_3)) : createCommentVNode("", true)
+        }, null, 8, _hoisted_3)) : createCommentVNode("", true),
+        unref(slots).overlay ? (openBlock(), createElementBlock("div", _hoisted_4, [
+          renderSlot(_ctx.$slots, "overlay")
+        ])) : createCommentVNode("", true)
       ], 2);
     };
   }

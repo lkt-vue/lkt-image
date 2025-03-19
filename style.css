@@ -1,5 +1,5 @@
 .lkt-image {
-    display: inline-flex;
+    display: var(--lkt-image-display);
     flex-direction: var(--lkt-image-flex-direction);
     align-items: var(--lkt-image-align-items);
     justify-content: var(--lkt-image-justify-content);
@@ -23,9 +23,10 @@
     transition: var(--lkt-image-transition);
     margin: var(--lkt-image-margin);
     overflow: var(--lkt-image-overflow);
+    position: relative;
 }
 
 .lkt-image img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: var(--lkt-image--img--max-width);
+    max-height: var(--lkt-image--img--max-height);
 }

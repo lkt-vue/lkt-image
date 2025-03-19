@@ -1,7 +1,7 @@
 :root {
     --lkt-image-gap: 15px;
     --lkt-image-font-size: 14px;
-    --lkt-image-font-weight: 14px;
+    --lkt-image-font-weight: 400;
     --lkt-image-text-align: center;
     --lkt-image-padding: 15px;
     --lkt-image-min-width: initial;
@@ -22,7 +22,11 @@
     --lkt-image-transition: all linear 300ms;
     --lkt-image-margin: 0;
     --lkt-image-overflow: hidden;
+    --lkt-image-display: inline-flex;
     --lkt-image-align-items: center;
     --lkt-image-justify-content: center;
     --lkt-image-flex-direction: column;
+
+    --lkt-image--img--max-width: 100%;
+    --lkt-image--img--max-height: 100%;
 }
