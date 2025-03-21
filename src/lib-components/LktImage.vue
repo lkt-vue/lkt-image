@@ -7,8 +7,8 @@ const props = withDefaults(defineProps<ImageConfig>(), getDefaultValues(Image));
 const slots = useSlots();
 
 const computedClassName = computed(() => {
-        return props.class;
-    });
+    return props.class;
+});
 
 </script>
 

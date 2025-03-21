@@ -23,7 +23,7 @@
     transition: var(--lkt-image-transition);
     margin: var(--lkt-image-margin);
     overflow: var(--lkt-image-overflow);
-    position: relative;
+    position: var(--lkt-image-position);
 }
 
 .lkt-image img {

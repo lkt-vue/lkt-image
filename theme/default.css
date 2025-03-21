@@ -1,4 +1,4 @@
-:root {
+.lkt-image {
     --lkt-image-gap: 15px;
     --lkt-image-font-size: 14px;
     --lkt-image-font-weight: 400;
@@ -26,6 +26,7 @@
     --lkt-image-align-items: center;
     --lkt-image-justify-content: center;
     --lkt-image-flex-direction: column;
+    --lkt-image-position: relative;
 
     --lkt-image--img--max-width: 100%;
     --lkt-image--img--max-height: 100%;
