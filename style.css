@@ -1,29 +1,35 @@
 .lkt-image {
-    display: var(--lkt-image-display);
-    flex-direction: var(--lkt-image-flex-direction);
-    align-items: var(--lkt-image-align-items);
-    justify-content: var(--lkt-image-justify-content);
-    gap: var(--lkt-image-gap);
-    padding: var(--lkt-image-padding);
-    min-width: var(--lkt-image-min-width);
-    max-width: var(--lkt-image-max-width);
-    width: var(--lkt-image-width);
-    min-height: var(--lkt-image-min-height);
-    max-height: var(--lkt-image-max-height);
-    height: var(--lkt-image-height);
-    background: var(--lkt-image-bg);
-    border-radius: var(--lkt-image-border-radius);
-    border-width: var(--lkt-image-border-width);
-    border-style: var(--lkt-image-border-style);
-    border-color: var(--lkt-image-border-color);
-    font-size: var(--lkt-image-font-size);
-    font-weight: var(--lkt-image-font-weight);
-    color: var(--lkt-image-color);
-    text-align: var(--lkt-image-text-align);
-    transition: var(--lkt-image-transition);
-    margin: var(--lkt-image-margin);
-    overflow: var(--lkt-image-overflow);
-    position: var(--lkt-image-position);
+    display: var(--lkt-image--display);
+    flex-direction: var(--lkt-image--flex-direction);
+    align-items: var(--lkt-image--align-items);
+    justify-content: var(--lkt-image--justify-content);
+    gap: var(--lkt-image--gap);
+    padding: var(--lkt-image--padding);
+    min-width: var(--lkt-image--min-width);
+    max-width: var(--lkt-image--max-width);
+    width: var(--lkt-image--width);
+    min-height: var(--lkt-image--min-height);
+    max-height: var(--lkt-image--max-height);
+    height: var(--lkt-image--height);
+    background: var(--lkt-image--background);
+    border-radius: var(--lkt-image--border-radius);
+    border-width: var(--lkt-image--border-width);
+    border-style: var(--lkt-image--border-style);
+    border-color: var(--lkt-image--border-color);
+    font-size: var(--lkt-image--font-size);
+    font-weight: var(--lkt-image--font-weight);
+    color: var(--lkt-image--color);
+    text-align: var(--lkt-image--text-align);
+    transition: var(--lkt-image--transition);
+    margin: var(--lkt-image--margin);
+    overflow: var(--lkt-image--overflow);
+    position: var(--lkt-image--position);
+}
+
+.lkt-image:hover {
+    color: var(--lkt-image--hover--color);
+    background: var(--lkt-image--hover--background);
+    border-color: var(--lkt-image--hover--border-color);
 }
 
 .lkt-image img {
