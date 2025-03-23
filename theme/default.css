@@ -1,35 +1,36 @@
 .lkt-image {
-    --lkt-image--gap: 15px;
+    --lkt-image--align-items: center;
+    --lkt-image--background: #ffffff;
+    --lkt-image--border-color: #ffffff;
+    --lkt-image--border-radius: 1px;
+    --lkt-image--border-style: solid;
+    --lkt-image--border-width: 1px;
+    --lkt-image--color: #444444;
+    --lkt-image--display: inline-flex;
+    --lkt-image--flex-direction: column;
     --lkt-image--font-size: 14px;
     --lkt-image--font-weight: 400;
-    --lkt-image--text-align: center;
-    --lkt-image--padding: 15px;
-    --lkt-image--min-width: initial;
-    --lkt-image--max-width: initial;
-    --lkt-image--width: initial;
-    --lkt-image--min-height: initial;
-    --lkt-image--max-height: initial;
+    --lkt-image--gap: 15px;
     --lkt-image--height: initial;
-    --lkt-image--background: #ffffff;
-    --lkt-image--color: #444444;
-    --lkt-image--border-radius: 1px;
-    --lkt-image--border-width: 1px;
-    --lkt-image--border-style: solid;
-    --lkt-image--border-color: #ffffff;
-    --lkt-image--transition: all linear 300ms;
-    --lkt-image--margin: 0;
-    --lkt-image--overflow: hidden;
-    --lkt-image--display: inline-flex;
-    --lkt-image--align-items: center;
     --lkt-image--justify-content: center;
-    --lkt-image--flex-direction: column;
+    --lkt-image--margin: 0;
+    --lkt-image--max-height: initial;
+    --lkt-image--max-width: initial;
+    --lkt-image--min-height: initial;
+    --lkt-image--min-width: initial;
+    --lkt-image--overflow: hidden;
+    --lkt-image--padding: 15px;
     --lkt-image--position: relative;
+    --lkt-image--text-align: center;
+    --lkt-image--transition: all linear 300ms;
+    --lkt-image--width: initial;
 
-    --lkt-image--img--max-width: 100%;
+    /** Element: Image */
     --lkt-image--img--max-height: 100%;
+    --lkt-image--img--max-width: 100%;
 
     /** Event: Hover */
     --lkt-image--hover--background: var(--lkt-image--background);
-    --lkt-image--hover--color: var(--lkt-image--color);
     --lkt-image--hover--border-color: var(--lkt-image--border-color);
+    --lkt-image--hover--color: var(--lkt-image--color);
 }
